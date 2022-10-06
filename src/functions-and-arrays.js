@@ -9,8 +9,24 @@ return num2
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
-
-function findLongestWord() {}
+findLongestWord(words);
+function findLongestWord(arr){
+  if (arr.length === 0 ){
+    return null
+  }
+  else if (arr.length ===1){
+    return arr[0]
+  }
+  let maxlengthCount = 0;
+  let maxLengthWord = "";
+  for( let i=0; i< arr.length; i++ ) {
+    if ( maxlengthCount < arr[i].length ) {
+      maxlengthCount = arr[i].length;
+      maxLengthWord = arr[i];
+    }
+  }
+  return maxLengthWord;
+}
 
 
 
