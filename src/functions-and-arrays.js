@@ -32,13 +32,26 @@ function findLongestWord(arr){
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+function sumNumbers(arr) {
+  let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+return sum
+}
 
-function sumNumbers() {}
 
 
+// #3.1 Bonus:
+function sum(arr) {
+  let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+for (arr.length>=0; i ){}
 
-// Iteration #3.1 Bonus:
-function sum() {}
+return sum
+}
 
 
 
